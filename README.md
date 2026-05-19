@@ -20,3 +20,9 @@ https://github.com/techwithkati/tls-react-lab
 ## Safety note
 
 No employer code, employer architecture, proprietary logic, or private data is used here.
+
+## License
+
+MIT. You can use, copy, modify, and adapt these templates and patterns in your own projects.
+
+Please keep the license notice when redistributing.
