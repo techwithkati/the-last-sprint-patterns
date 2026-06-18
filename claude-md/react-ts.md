@@ -6,13 +6,11 @@
 
 # Last updated: 2026-05-19
 
-# Source: derived from tls-react-lab/CLAUDE.md
-
-# Lab repo: https://github.com/techwithkati/tls-react-lab
+# Source: refined on real React + TypeScript projects
 
 This is a reusable CLAUDE.md template for React + TypeScript side projects.
 
-It is derived from the CLAUDE.md used in `tls-react-lab`, a public-safe lab repo for testing CLAUDE.md patterns, Claude Skills, and AI code review workflows.
+It is refined on real React + TypeScript work and kept here as a starting point you copy and adapt.
 
 This file is not universal. Adapt it to your own project. Delete sections that do not apply. Add constraints that matter in your codebase.
 

@@ -1,28 +1,30 @@
 # The Last Sprint Patterns
 
-CLAUDE.md templates, Claude Skills, and AI coding patterns that survive past the demo.
+CLAUDE.md templates, checklists, and AI coding guardrails that survive past the demo.
 
-This repo is the public artifact shelf for The Last Sprint.
+This is the public artifact shelf for [The Last Sprint](https://thelastsprint.dev), a freelance engineering practice. Everything here is something I use on real work and would point at.
 
 ## Start here
 
 - `claude-md/react-ts.md` — reusable React + TypeScript CLAUDE.md template
-- `patterns/react-ts-claude-md.md` — walkthrough of the pattern
-- `skills/` — Claude Skills will be added after they are tested in real use
+- `patterns/react-ts-claude-md.md` — section-by-section walkthrough of that template
+- `checklists/codebase-review.md` — what I check when I take over an unfamiliar codebase
+- `skills/` — Claude Skills, added once they have earned their place on real work
 
-## Proof layer
+## How this connects to the work
 
-Some artifacts are derived from `tls-react-lab`, a public-safe React + TypeScript lab used to test these workflows.
+The same care that goes into these files is what I do for hire: codebase cleanup, migrations, and shipping features in older or messy systems, with output that stays reviewable and a clean handoff.
 
-Lab repo:
-https://github.com/techwithkati/tls-react-lab
+If your team wants that applied to a real codebase: https://thelastsprint.dev/work/
+
+## How patterns earn their place
+
+A file starts in draft. It moves to published only after I have used it to ship something I would point at. Every change to a published artifact is logged in `CHANGELOG.md`.
 
 ## Safety note
 
-No employer code, employer architecture, proprietary logic, or private data is used here.
+No employer code, employer architecture, proprietary logic, or private data is used here. Examples are generic or built from reusable practice.
 
 ## License
 
-MIT. You can use, copy, modify, and adapt these templates and patterns in your own projects.
-
-Please keep the license notice when redistributing.
+MIT. Use, copy, modify, and adapt these templates and patterns in your own projects. Keep the license notice when redistributing.
