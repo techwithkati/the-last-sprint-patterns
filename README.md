@@ -12,12 +12,12 @@ Intermediate-to-senior full-stack developers — solo, freelance, and small-team
 
 ## Start here
 
-- `guardrails/agents-md-starter.md` — the minimum useful CLAUDE.md + AGENTS.md, and the few rules that actually change agent behavior
-- `examples/synthetic-fullstack-repo/` — a filled CLAUDE.md + AGENTS.md you can copy and adapt
-- `claude-md/react-ts.md` — the long-form annotated React + TypeScript CLAUDE.md template
-- `patterns/react-ts-claude-md.md` — section-by-section walkthrough of that template
-- `checklists/codebase-review.md` — what I check when I take over an unfamiliar codebase
-- `skills/` — Claude Skills, added once they have earned their place on real work
+- [`guardrails/agents-md-starter.md`](guardrails/agents-md-starter.md) — the minimum useful CLAUDE.md + AGENTS.md, and the few rules that actually change agent behavior
+- [`examples/synthetic-fullstack-repo/`](examples/synthetic-fullstack-repo/) — a filled CLAUDE.md + AGENTS.md you can copy and adapt
+- [`claude-md/react-ts.md`](claude-md/react-ts.md) — the long-form annotated React + TypeScript CLAUDE.md template
+- [`patterns/react-ts-claude-md.md`](patterns/react-ts-claude-md.md) — section-by-section walkthrough of that template
+- [`checklists/codebase-review.md`](checklists/codebase-review.md) — what I check when I take over an unfamiliar codebase
+- [`skills/`](skills/) — Claude Skills, added once they have earned their place on real work
 
 ## What's next
 
