@@ -29,12 +29,12 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 ### Changed
 
-- `README.md` rewritten around the freelance practice plus open library, with a pointer to https://thelastsprint.dev/work/.
+- `README.md` rewritten around the open pattern library.
 - `claude-md/react-ts.md` provenance updated: the template is maintained here directly.
 
 ### Notes
 
-- The source lab has been retired. This repo is the single source of truth going forward; future updates come from real project work.
+- The source lab has been retired. This repo is the public source of truth for reusable artifacts going forward; future updates come from tested patterns, recreated examples, or demo repos.
 
 ## 2026-05-19
 
@@ -65,4 +65,4 @@ The template includes sections for:
 ### Notes
 
 - This is v1.0 of the reusable template, not a universal final version.
-- Future updates should come from real usage, broken assumptions, or repeated workflow patterns worth turning into Claude Skills.
+- Future updates should come from tested usage, broken assumptions, or repeated workflow patterns worth turning into Claude Skills.

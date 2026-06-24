@@ -2,7 +2,7 @@
 
 This folder will hold Claude Skills: small, reusable procedures that package a workflow so Claude runs it the same way every time.
 
-Nothing ships here yet, and that is deliberate. A skill earns its place only after the workflow behind it has been run enough times on real work to be worth automating. A skill written before then just encodes a guess.
+Nothing ships here yet, and that is deliberate. A skill earns its place only after the workflow behind it has been tested enough times to be worth automating. A skill written before then just encodes a guess.
 
 ## Planned
 

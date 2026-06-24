@@ -4,7 +4,7 @@ Guardrails, checklists, and workflows for using AI coding agents (Claude Code, C
 
 AI is the entry point. Trustworthy code is the point.
 
-This is the public workbench for [The Last Sprint](https://thelastsprint.dev). Everything here is something I use on real work and would point at.
+This is the public workbench for [The Last Sprint](https://thelastsprint.dev). Everything here is a reusable artifact I would point a developer at.
 
 ## Who this is for
 
@@ -17,7 +17,7 @@ Intermediate-to-senior full-stack developers, solo, freelance, and small-team en
 - [`claude-md/react-ts.md`](claude-md/react-ts.md): the long-form annotated React + TypeScript CLAUDE.md template
 - [`patterns/react-ts-claude-md.md`](patterns/react-ts-claude-md.md): section-by-section walkthrough of that template
 - [`checklists/codebase-review.md`](checklists/codebase-review.md): what I check when I take over an unfamiliar codebase
-- [`skills/`](skills/): Claude Skills, added once they have earned their place on real work
+- [`skills/`](skills/): Claude Skills, added once the workflow behind them has been tested enough to be useful
 
 ## What's next
 
@@ -25,15 +25,15 @@ One useful artifact a week, working through: agent instruction starters, an AI P
 
 ## How this connects to The Last Sprint
 
-The Last Sprint is about getting AI coding agents to work the way your repo already works, and shipping diffs you would still approve in review. These files are that idea made reusable. If you want it applied to a real codebase: https://thelastsprint.dev/work/
+The Last Sprint is about getting AI coding agents to work the way your repo already works, and shipping diffs you would still approve in review. These files are that idea made reusable. For the notes behind the artifacts, start here: https://thelastsprint.dev/notes/
 
 ## How patterns earn their place
 
-A file starts in draft. It moves to published only after I have used it to ship something I would point at. Every change to a published artifact is logged in `CHANGELOG.md`.
+A file starts in draft. It moves to published only after it has been tested enough to be useful. Every change to a published artifact is logged in `CHANGELOG.md`.
 
 ## Safety note
 
-No employer code, employer architecture, proprietary logic, or private data is used here. Examples are generic or built from reusable practice.
+Examples are recreated or generalized so they can be shared publicly. No private code, architecture, screenshots, or data belongs here.
 
 ## License
 
