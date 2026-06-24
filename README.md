@@ -1,21 +1,31 @@
 # The Last Sprint Patterns
 
-CLAUDE.md templates, checklists, and AI coding guardrails that survive past the demo.
+Guardrails, checklists, and workflows for using AI coding agents — Claude Code, Codex — in real codebases without losing control of the diff.
 
-This is the public artifact shelf for [The Last Sprint](https://thelastsprint.dev), a freelance engineering practice. Everything here is something I use on real work and would point at.
+AI is the entry point. Trustworthy code is the point.
+
+This is the public workbench for [The Last Sprint](https://thelastsprint.dev). Everything here is something I use on real work and would point at.
+
+## Who this is for
+
+Intermediate-to-senior full-stack developers — solo, freelance, and small-team engineers — running coding agents in existing, production-style repos. If you care about repo guardrails, reviewable diffs, and safer refactors more than AI hype, this is for you.
 
 ## Start here
 
-- `claude-md/react-ts.md` — reusable React + TypeScript CLAUDE.md template
+- `guardrails/agents-md-starter.md` — the minimum useful CLAUDE.md + AGENTS.md, and the few rules that actually change agent behavior
+- `examples/synthetic-fullstack-repo/` — a filled CLAUDE.md + AGENTS.md you can copy and adapt
+- `claude-md/react-ts.md` — the long-form annotated React + TypeScript CLAUDE.md template
 - `patterns/react-ts-claude-md.md` — section-by-section walkthrough of that template
 - `checklists/codebase-review.md` — what I check when I take over an unfamiliar codebase
 - `skills/` — Claude Skills, added once they have earned their place on real work
 
-## How this connects to the work
+## What's next
 
-The same care that goes into these files is what I do for hire: codebase cleanup, migrations, and shipping features in older or messy systems, with output that stays reviewable and a clean handoff.
+One useful artifact a week, working through: agent instruction starters, an AI PR-review checklist, repeatable debugging and refactor workflows, and the first shipped Claude Skill.
 
-If your team wants that applied to a real codebase: https://thelastsprint.dev/work/
+## How this connects to The Last Sprint
+
+The Last Sprint is about getting AI coding agents to work the way your repo already works, and shipping diffs you would still approve in review. These files are that idea made reusable. If you want it applied to a real codebase: https://thelastsprint.dev/work/
 
 ## How patterns earn their place
 

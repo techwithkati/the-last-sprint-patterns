@@ -4,6 +4,21 @@ All notable changes to The Last Sprint Patterns will be documented here.
 
 This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Claude Skills, named patterns, and supporting docs.
 
+## 2026-06-23
+
+### Added
+
+- `guardrails/agents-md-starter.md` — the minimum useful CLAUDE.md + AGENTS.md, the 5–7 rules that matter most, a before/after example, and how to adapt it.
+- `examples/synthetic-fullstack-repo/` — a fictional taskboard app with a filled, copy-ready `CLAUDE.md` and `AGENTS.md`.
+
+### Changed
+
+- `README.md` repositioned around using AI coding agents in real codebases without losing control of the diff, with a "who this is for" and "what's next" section.
+
+### Notes
+
+- The synthetic taskboard repo is fictional. No real project, client, or codebase is described.
+
 ## 2026-06-18
 
 ### Added
@@ -19,7 +34,7 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 ### Notes
 
-- `tls-react-lab` has been archived. This repo is the single source of truth going forward; future updates come from real project work.
+- The source lab has been retired. This repo is the single source of truth going forward; future updates come from real project work.
 
 ## 2026-05-19
 
@@ -29,7 +44,7 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 Initial annotated CLAUDE.md template for React + TypeScript side projects.
 
-Derived from the active `tls-react-lab/CLAUDE.md`, which is currently used in a public-safe React + TypeScript lab for testing CLAUDE.md patterns, Claude Skills, AI code review workflows, refactor patterns, and testing rules.
+Derived from a public-safe React + TypeScript lab used to test CLAUDE.md patterns, Claude Skills, AI code review workflows, refactor patterns, and testing rules.
 
 The template includes sections for:
 
@@ -50,5 +65,4 @@ The template includes sections for:
 ### Notes
 
 - This is v1.0 of the reusable template, not a universal final version.
-- The source lab file is `tls-react-lab/CLAUDE.md`.
-- Future updates should come from real usage in `tls-react-lab`, broken assumptions, or repeated workflow patterns worth turning into Claude Skills.
+- Future updates should come from real usage, broken assumptions, or repeated workflow patterns worth turning into Claude Skills.
