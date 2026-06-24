@@ -16,7 +16,7 @@ every rule points at something concrete.
 
 They overlap, and that is fine. The split that works in practice:
 
-- **`AGENTS.md`** is tool-agnostic and practical: how to install, run, test, type-check, and lint; where things live; the hard boundaries. Any agent — Claude Code, Codex, another — should be able to act from it. Keep it short and factual.
+- **`AGENTS.md`** is tool-agnostic and practical: how to install, run, test, type-check, and lint; where things live; the hard boundaries. Any agent (Claude Code, Codex, another) should be able to act from it. Keep it short and factual.
 - **`CLAUDE.md`** is where the *reasoning* and the judgment rules live: the escape hatch, what "done" means, when to stop and ask. Claude reads it every turn.
 
 Keep both. Put commands and the file map in `AGENTS.md`, put the working agreement in `CLAUDE.md`, and link rather than duplicate. If you only keep one, keep the one your primary agent reads every time.
@@ -30,10 +30,10 @@ exists to prevent a specific failure.
 **Prevents:** the agent falling back to generic patterns from training and quietly expanding scope. Name the stack, the folder map, and "do not expand scope unless asked." That last line is doing real work.
 
 ### 2. Do-not-touch zones
-**Prevents:** persistence, shared types, migrations, build config, and `.env` files getting edited without anyone noticing until production. Name your real boundaries — the data-access layer, applied migrations, anything that touches saved data or money.
+**Prevents:** persistence, shared types, migrations, build config, and `.env` files getting edited without anyone noticing until production. Name your real boundaries: the data-access layer, applied migrations, anything that touches saved data or money.
 
 ### 3. The escape-hatch stop phrase
-**Prevents:** the agent guessing when it is unsure instead of surfacing the decision. Give it one verbatim phrase — `STOP, escape hatch triggered` — so it is easy to grep for in a transcript, and a short list of exactly when to use it.
+**Prevents:** the agent guessing when it is unsure instead of surfacing the decision. Give it one verbatim phrase, `STOP, escape hatch triggered`, so it is easy to grep for in a transcript, and a short list of exactly when to use it.
 
 ### 4. Name the diff before editing
 **Prevents:** the change that works in the demo but is impossible to review. Before touching code, the agent states the files that will change, the files that must not, the tests to add, and the risk level. This one rule is the spine of a reviewable diff.
@@ -57,7 +57,7 @@ The same task, with and without the starter in place.
 
 **Without guardrails:** the agent edits a card component, then reaches into the
 shared types file, then "while it was there" rewrites the repository function
-that saves cards, changes its signature, and updates three call sites — all in
+that saves cards, changes its signature, and updates three call sites, all in
 one pass, no tests, reported as done. The diff touches the persistence boundary
 and you find out in review, if you catch it at all.
 
@@ -69,13 +69,13 @@ and you find out in review, if you catch it at all.
 > stored shape means changing a shared type and the persistence layer. Risk:
 > medium. Recommend we agree on the type change and a migration before I edit.
 
-That pause is the whole point. The field still gets added — but as a change you
+That pause is the whole point. The field still gets added, but as a change you
 chose, with a diff you can review.
 
 ## Adapt it to your repo
 
 1. Copy `CLAUDE.md` and `AGENTS.md` into your repo root.
-2. Replace every taskboard specific — stack, paths, commands, boundaries — with the truth about your project.
+2. Replace every taskboard specific (stack, paths, commands, boundaries) with the truth about your project.
 3. Delete any rule you will not actually enforce. A rule you do not mean teaches the agent the whole document is decorative.
 4. Commit them, and change them through PRs. Treat them like code.
 
@@ -83,7 +83,7 @@ chose, with a diff you can review.
 
 This starter is short on purpose. A working agreement you can read in one screen
 gets followed; a config nobody finishes reading gets ignored. Resist the urge to
-document everything — add a rule only when the agent makes the same mistake
+document everything. Add a rule only when the agent makes the same mistake
 twice, or a new convention becomes load-bearing. When the file outgrows a screen,
 that is usually a sign to cut, not to add.
 

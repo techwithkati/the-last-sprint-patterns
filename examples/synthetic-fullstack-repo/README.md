@@ -1,4 +1,4 @@
-# Synthetic Full-Stack Repo — Taskboard
+# Synthetic Full-Stack Repo: Taskboard
 
 This is a **fictional** full-stack app. It does not exist as running code. It is here only as a backdrop so the `CLAUDE.md` and `AGENTS.md` next to it have something concrete to point at.
 

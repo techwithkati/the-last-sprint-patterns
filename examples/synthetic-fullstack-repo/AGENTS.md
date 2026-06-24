@@ -1,4 +1,4 @@
-# AGENTS.md — Taskboard
+# AGENTS.md for Taskboard
 
 > Filled example for a fictional app. `AGENTS.md` is the tool-agnostic companion
 > to `CLAUDE.md`: the commands and conventions any coding agent (Claude Code,
@@ -32,9 +32,9 @@ Run the relevant tests and the type check before calling a task done.
 
 ## Where things live
 
-- Frontend: `client/src` — `components/` (shared UI), `features/` (board,
+- Frontend: `client/src` holds `components/` (shared UI), `features/` (board,
   column, card), `lib/` (utilities), `types/` (shared models).
-- API: `server/src` — `routes/` (Express handlers), `repo/` (database access),
+- API: `server/src` holds `routes/` (Express handlers), `repo/` (database access),
   `db/` (connection and migrations).
 - Routes call into `repo/`; they do not query the database directly.
 
@@ -42,8 +42,8 @@ Run the relevant tests and the type check before calling a task done.
 
 Do not change these without asking first:
 
-- `server/src/repo/**` and `server/src/db/migrations/**` — persistence boundary.
-- `client/src/types/**` — shared models.
+- `server/src/repo/**` and `server/src/db/migrations/**`: persistence boundary.
+- `client/src/types/**`: shared models.
 - Build and TypeScript config files; `.env*`.
 
 When a task would cross a boundary, change architecture, add a dependency, or

@@ -1,4 +1,4 @@
-# CLAUDE.md — Taskboard
+# CLAUDE.md for Taskboard
 
 > Filled example for a fictional app. Copy this into your repo and replace every
 > detail with the truth about your project. Keep it short: a working agreement,
@@ -28,11 +28,11 @@ need more, say so and stop.
 
 Do not modify these without explicit confirmation:
 
-- `server/src/repo/**` — the persistence boundary. Changes can affect saved data.
-- `server/src/db/migrations/**` — applied migrations are history; never edit in place.
-- `client/src/types/**` — shared models ripple across the app.
-- `*.config.ts`, `tsconfig*.json` — build and strictness settings are intentional.
-- `.env*` — never create, edit, or commit secrets.
+- `server/src/repo/**`: the persistence boundary. Changes can affect saved data.
+- `server/src/db/migrations/**`: applied migrations are history; never edit in place.
+- `client/src/types/**`: shared models ripple across the app.
+- `*.config.ts`, `tsconfig*.json`: build and strictness settings are intentional.
+- `.env*`: never create, edit, or commit secrets.
 
 If a task needs one of these, stop and trigger the escape hatch.
 

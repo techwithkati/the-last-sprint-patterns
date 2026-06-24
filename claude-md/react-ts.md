@@ -1,4 +1,4 @@
-# CLAUDE.md Template — React + TypeScript Side Project
+# CLAUDE.md Template: React + TypeScript Side Project
 
 # Version: 1.0
 
@@ -90,13 +90,13 @@ This section names the files and folders Claude must not edit without asking fir
 
 Do not modify these files or folders without explicit confirmation:
 
-- `[path/to/storage.ts]` — persistence boundary. Changes can affect saved data.
-- `[path/to/types.ts]` — shared types. Changes ripple through the app.
-- `[path/to/api-or-repo-layer]` — data access boundary. Keep function signatures stable.
-- `vite.config.ts` — build configuration.
-- `vitest.config.ts` — test configuration.
-- `tsconfig.json` and related TypeScript config files — strict settings are intentional.
-- `.env*` files — never create, edit, or commit secrets.
+- `[path/to/storage.ts]`: persistence boundary. Changes can affect saved data.
+- `[path/to/types.ts]`: shared types. Changes ripple through the app.
+- `[path/to/api-or-repo-layer]`: data access boundary. Keep function signatures stable.
+- `vite.config.ts`: build configuration.
+- `vitest.config.ts`: test configuration.
+- `tsconfig.json` and related TypeScript config files: strict settings are intentional.
+- `.env*` files: never create, edit, or commit secrets.
 
 If a requested change requires touching a do-not-touch zone, stop and say:
 
@@ -293,8 +293,8 @@ When asked to write a PR description, use this format:
 
 ## Files changed
 
-- `[file]` — [reason]
-- `[file]` — [reason]
+- `[file]`: [reason]
+- `[file]`: [reason]
 
 ## Risk level
 

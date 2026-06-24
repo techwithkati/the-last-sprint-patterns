@@ -8,8 +8,8 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 ### Added
 
-- `guardrails/agents-md-starter.md` — the minimum useful CLAUDE.md + AGENTS.md, the 5–7 rules that matter most, a before/after example, and how to adapt it.
-- `examples/synthetic-fullstack-repo/` — a fictional taskboard app with a filled, copy-ready `CLAUDE.md` and `AGENTS.md`.
+- `guardrails/agents-md-starter.md`: the minimum useful CLAUDE.md + AGENTS.md, the 5 to 7 rules that matter most, a before/after example, and how to adapt it.
+- `examples/synthetic-fullstack-repo/`: a fictional taskboard app with a filled, copy-ready `CLAUDE.md` and `AGENTS.md`.
 
 ### Changed
 
@@ -23,9 +23,9 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 ### Added
 
-- `checklists/codebase-review.md` — checklist for taking over an unfamiliar codebase before making changes.
-- `patterns/react-ts-claude-md.md` — section-by-section walkthrough of the React + TypeScript CLAUDE.md template.
-- `skills/README.md` — what the skills folder is for and what is planned.
+- `checklists/codebase-review.md`: checklist for taking over an unfamiliar codebase before making changes.
+- `patterns/react-ts-claude-md.md`: section-by-section walkthrough of the React + TypeScript CLAUDE.md template.
+- `skills/README.md`: what the skills folder is for and what is planned.
 
 ### Changed
 

@@ -6,8 +6,8 @@ Nothing ships here yet, and that is deliberate. A skill earns its place only aft
 
 ## Planned
 
-- `safe-claude-code-change` — the plan-then-edit loop: name the files that will change, the files that must not, the tests to add, and the risk level, before touching code.
-- `ai-assisted-pr-review` — walk a generated diff against a manual review checklist instead of trusting a green test run.
+- `safe-claude-code-change`: the plan-then-edit loop. Name the files that will change, the files that must not, the tests to add, and the risk level, before touching code.
+- `ai-assisted-pr-review`: walk a generated diff against a manual review checklist instead of trusting a green test run.
 
 These move out of "planned" once they have been used on real projects and I would point at the result. Until then this file is the honest placeholder.
 
