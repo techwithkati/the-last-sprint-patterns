@@ -41,4 +41,4 @@ Stack:
 3. Delete any rule you will not actually enforce.
 4. Commit them, and change them through PRs like code.
 
-For the reasoning behind each rule, see [`../../guardrails/agents-md-starter.md`](../../guardrails/agents-md-starter.md). For the full annotated long-form template, see [`../../claude-md/react-ts.md`](../../claude-md/react-ts.md).
+For the reasoning behind each rule, see [`../../guardrails/agents-md-starter.md`](../../guardrails/agents-md-starter.md).

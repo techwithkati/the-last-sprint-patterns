@@ -10,7 +10,6 @@ every rule points at something concrete.
 
 - Filled files to copy: [`../examples/synthetic-fullstack-repo/CLAUDE.md`](../examples/synthetic-fullstack-repo/CLAUDE.md) and [`AGENTS.md`](../examples/synthetic-fullstack-repo/AGENTS.md).
 - The fictional repo they describe: [`../examples/synthetic-fullstack-repo/README.md`](../examples/synthetic-fullstack-repo/README.md).
-- The long-form annotated template, when you want depth: [`../claude-md/react-ts.md`](../claude-md/react-ts.md).
 
 ## CLAUDE.md vs AGENTS.md: what goes where
 

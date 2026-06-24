@@ -4,6 +4,17 @@ All notable changes to The Last Sprint Patterns will be documented here.
 
 This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Claude Skills, named patterns, and supporting docs.
 
+## 2026-06-24
+
+### Removed
+
+- `claude-md/react-ts.md`: the long-form React + TypeScript CLAUDE.md template.
+- `patterns/react-ts-claude-md.md`: the section-by-section walkthrough of that template.
+
+### Notes
+
+- These were an earlier, second CLAUDE.md track that overlapped the agent instruction starter. The guardrails starter in `guardrails/agents-md-starter.md` is now the single entry point for agent instructions, and links that pointed at the retired files were updated or removed.
+
 ## 2026-06-23
 
 ### Added
@@ -44,7 +55,7 @@ This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Clau
 
 Initial annotated CLAUDE.md template for React + TypeScript side projects.
 
-Derived from a public-safe React + TypeScript lab used to test CLAUDE.md patterns, Claude Skills, AI code review workflows, refactor patterns, and testing rules.
+Built from a synthetic React + TypeScript demo repo used to test CLAUDE.md patterns, Claude Skills, AI code review workflows, refactor patterns, and testing rules. The example was recreated or generalized so it could be shared publicly.
 
 The template includes sections for:
 

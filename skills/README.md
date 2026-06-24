@@ -11,4 +11,4 @@ Nothing ships here yet, and that is deliberate. A skill earns its place only aft
 
 These move out of "planned" once they have been used on real projects and I would point at the result. Until then this file is the honest placeholder.
 
-See [`../patterns/react-ts-claude-md.md`](../patterns/react-ts-claude-md.md) for the change and review rules these skills will build on.
+See [`../guardrails/agents-md-starter.md`](../guardrails/agents-md-starter.md) for the change and review rules these skills will build on.

@@ -86,8 +86,3 @@ cannot, the maintenance cost, and the smaller alternative.
 One logical change per commit. Use `feat:` / `fix:` / `refactor:` / `test:` /
 `docs:` / `chore:` prefixes. Subject under 70 characters. No vague messages like
 "update files."
-
----
-
-For the long-form annotated version of these rules, see
-[`../../claude-md/react-ts.md`](../../claude-md/react-ts.md).
