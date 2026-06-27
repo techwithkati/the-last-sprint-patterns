@@ -2,7 +2,7 @@
 
 How to use a coding agent (Claude Code, Codex, Cursor, Copilot, or similar) to refactor code in a real repository without losing control of the diff.
 
-AI-assisted refactoring is still refactoring. The goal has not changed: preserve behavior, keep the change small enough to review, and verify it with the relevant tests, lint, typecheck, and a careful read of the diff. An agent makes the edits faster, but the parts that make a refactor safe are still yours to do.
+AI-assisted refactoring is still refactoring. The goal has not changed: keep behavior stable, keep the change small enough to review, and verify it with the relevant tests, lint, typecheck, and a careful read of the diff. An agent makes the edits faster, but the parts that make a refactor safe are still yours to do.
 
 ## 1. When to use this checklist
 
@@ -26,6 +26,7 @@ AI-assisted refactoring is still refactoring. The goal has not changed: preserve
 - [ ] Confirm the current tests pass on a clean checkout, so you have a known-good baseline.
 - [ ] Write down the exact commands that prove behavior held, for example `npm test`, `npm run typecheck`, `npm run lint`, or the repo-specific equivalents.
 - [ ] Decide the risk level. If it touches a boundary (persistence, shared types, migrations, public API), agree on the approach before any edit.
+- [ ] Decide what kind of refactor this is: move/rename, extraction, simplification, dependency cleanup, or test cleanup.
 
 ## 4. Plan-first prompt
 
@@ -35,6 +36,8 @@ Ask the agent to inspect and plan before it touches code. Read the plan, and cor
 We are doing a behavior-preserving refactor. Do not edit anything yet.
 
 Goal: <one or two sentences describing the target shape of the code>
+
+Use the existing project conventions. Do not reformat unrelated code, add dependencies, or change tests unless the plan calls for it.
 
 First, inspect the relevant code and tell me:
 1. The files you expect to change, and why.
@@ -49,12 +52,25 @@ Then stop and wait for me to confirm the plan before editing.
 
 ## 5. During the refactor
 
+Use a narrow edit prompt for each approved step.
+
+```
+We approved the plan. Now do only step <number/name>.
+
+Constraints:
+- Only edit these files: <files>
+- Do not change public signatures, exported types, persistence, migrations, schemas, snapshots, or lockfiles unless listed above.
+- Do not reformat unrelated code.
+- Do not change tests unless I explicitly asked for it.
+- Stop after this step and summarize the diff.
+```
+
 - [ ] Hold the agent to the planned files. If it wants to touch a file outside the plan, that is a stop-and-discuss, not a silent expansion.
 - [ ] Keep each step small enough to review on its own. Prefer several reviewable commits over one large rewrite.
 - [ ] Give the agent one refactor step at a time. Do not combine extraction, renaming, dependency changes, and test edits in the same pass.
 - [ ] Do not let public signatures, exported types, or interfaces drift unless the plan said so.
 - [ ] Watch for "while I was here" changes: renamed variables across unrelated files, reformatting, dependency additions. These hide the real diff.
-- [ ] Lockfiles, generated files, snapshots, migrations, and schema files only changed if the plan explicitly included them.
+- [ ] No lockfiles, generated files, snapshots, migrations, or schema files changed unless the plan explicitly included them.
 - [ ] If the agent gets stuck and starts changing behavior to make something pass, stop. Re-plan instead of letting it improvise.
 
 ## 6. Verification checks
@@ -64,6 +80,7 @@ Then stop and wait for me to confirm the plan before editing.
 - [ ] Typecheck passes with no new suppressions or `any` escapes added to silence it.
 - [ ] Lint passes without new disable comments hiding the change.
 - [ ] You ran the affected path manually if it is not fully covered by tests.
+- [ ] You checked the risky behavior edges for this refactor: ordering, defaults, null/undefined, errors, permissions, async timing, and serialization.
 - [ ] You reviewed the actual `git diff`, not only the agent's summary.
 - [ ] No new dependency was pulled in for something existing code already handles.
 
@@ -102,6 +119,6 @@ Be specific and point at lines. If something is risky, say so plainly.
 - [ ] Behavior is unchanged by evidence, not by assertion.
 - [ ] The change is small, reversible, and easy to roll back if it misbehaves in production.
 
-A refactor is done when the code is in better shape and nobody downstream can tell anything moved. The agent helps you get there faster. It does not get to decide you are finished.
+A refactor is done when the code is in better shape and nobody downstream can tell anything moved. The agent can speed up the edits. It does not get to decide the refactor is done.
 
 Make it survive past the demo.
