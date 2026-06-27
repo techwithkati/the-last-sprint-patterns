@@ -4,6 +4,12 @@ All notable changes to The Last Sprint Patterns will be documented here.
 
 This repo tracks public artifacts for The Last Sprint: CLAUDE.md templates, Claude Skills, named patterns, and supporting docs.
 
+## 2026-06-26
+
+### Added
+
+- `checklists/ai-assisted-refactor.md`: a checklist for using a coding agent to refactor in a real repo without losing control of the diff. Covers when to use it and when not to, a plan-first prompt, what to watch during the refactor, verification checks, a review prompt, PR notes, and a final merge checklist. Frames AI-assisted refactoring as still refactoring: preserve behavior, keep it small enough to review, verify with tests, lint, typecheck, and a diff read.
+
 ## 2026-06-24
 
 ### Removed
